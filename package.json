@@ -1,0 +1,16 @@
+{
+  "name": "grupo_5_proyectodh",
+  "version": "1.0.0",
+  "description": "Nuestro Market Place estara dirigido a los aficionados del futbol y el deporte en general de todas las edades.\r Nuestra oferta se centrara en la venta de camisetas de futbol de diversos equipos de todas las ligas del mundo.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

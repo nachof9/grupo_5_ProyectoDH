@@ -1,0 +1,404 @@
+/* Globales */
+
+:root {
+    --color-principal: #5ccb5f;
+    --color-secundario: #006414
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Header */
+
+/* Top bar */
+
+/* Top Header */
+.header {
+    background-color: var(--color-principal);
+}
+
+.header__top-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+
+.header__logo_link {
+    text-align: center
+    ;
+}
+
+.header__logo {
+    width: 30rem;
+    max-width: 30%;
+}
+
+.logo__mobile {
+    display: none;
+}
+
+.header__top-form {
+    width: 30%;
+    display: flex;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 1.5rem;
+    outline: none;
+    border: 1px solid var(--color-secundario);
+}
+
+.search-button {
+    padding: 1.5rem;
+    border-radius: 0;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.search-button i {
+    color: white;
+}
+
+.header__manage-account a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    margin-left: .8rem;
+}
+
+.header__manage-account a:hover {
+    background-color: #004e10;
+}
+
+.header__manage-account i {
+    margin-left: 1rem;
+}
+
+.header__manage-account .carrito-compras i  {
+    margin-left: 0;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__hero-benefits-container div i {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        background-color: var(--color-principal);
+    }
+
+    .header__logo_link{
+        max-width: 25%;
+    }
+
+    .header__top-form {
+        width: 60%;
+        display: flex;
+    }
+
+    .header__manage-account {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding: 1rem 1.3rem;
+        background-color: #004e10;
+        color: white;
+        font-size:  2rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+
+    .logo__mobile {
+        display: block;
+    }
+
+    .header__top-form {
+        width: 80%;
+        display: flex;
+    }
+
+    .header__top-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+
+/* Nav */
+
+.nav {
+    background-color: var(--color-secundario);
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav__item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav__item:hover {
+    border-bottom: 2px solid #fefefe;
+    color: #fefefe;
+
+}
+
+@media (max-width: 1024px) {
+    .nav__container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+}
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 40rem;
+    background-image: url(/images/image-hero.jpg);
+}
+
+.header__hero-benefits {
+    background-color: white;
+    padding-top: 10rem;
+}
+
+.header__hero-benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.header__hero-benefits-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__hero-benefits-card {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 0 5rem;
+}
+
+@media(max-width: 1024px) {
+    .header__hero-benefits-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .hero {
+        height: 30rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .header__hero-benefits-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .header__hero-benefits-card {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5rem 0;
+    }
+
+}
+
+
+
+/* Main */
+
+.main {
+    margin-top: 10rem;
+}
+
+.main__heading {
+    text-align: center;
+    font-size: 3rem;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    color: white;
+    border-radius: 0 0 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.main__products-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 7rem;
+}
+
+.main__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__product img{
+    width: 30rem;
+}
+
+.main__product p{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.main__product a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    font-size: 1.7rem;
+    margin-top: 1.3rem;
+    font-weight: 700;
+}
+
+.main__product a:hover {
+    background-color: #004e10;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        max-width: 100%;
+    }
+
+    .main__heading {
+        width: 60%;
+    }
+
+    .main__products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .main__heading {
+        width: 100%;
+    }
+
+    .main__products-container {
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-principal);
+    padding: 2rem 0;
+    margin-top: 10rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__methods div img {
+    width: 40rem;
+    margin-top: 0.7rem;
+}
+
+.footer__social-networks i{
+    font-size: 3rem;
+    margin-top: 0.7rem;
+}
+
+.footer__contacto i{
+    margin-right: 1rem;
+}
+
+@media(max-width:1024px) {
+    .footer__container {
+        gap: 3rem;
+    }
+}
+
+@media(max-width:768px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer__contacto, .footer__social-networks {
+        border-bottom: 1px solid var(--color-secundario);
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+
