@@ -14,6 +14,6 @@ app.get('/login', (req,res) => {
     res.sendFile(__dirname + '/views/login.html')
 })
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('Servidor iniciado correctamente')
 })
