@@ -1,3 +1,4 @@
+/* Globales */
 
 :root {
     --color-principal: #5ccb5f;
@@ -24,7 +25,7 @@ body {
     margin: 0 auto;
 }
 
-
+/* Top Header */
 .header {
     background-color: var(--color-principal);
 }
@@ -38,12 +39,17 @@ body {
 
 
 .header__logo_link {
-    text-align: center ;
+    text-align: center
+    ;
 }
 
 .header__logo {
     width: 30rem;
     max-width: 30%;
+}
+
+.logo__mobile {
+    display: none;
 }
 
 .header__top-form {
@@ -75,14 +81,92 @@ body {
     color: white;
     background-color: var(--color-secundario);
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: .8rem;
+}
 
+.header__manage-account a:hover {
+    background-color: #004d0f;
 }
 
 .header__manage-account i {
     margin-left: 1rem;
 }
 
+.header__manage-account .carrito-compras i  {
+    margin-left: 0;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__hero-benefits-container div i {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        background-color: var(--color-principal);
+    }
+
+    .header__logo_link{
+        max-width: 25%;
+    }
+
+    .header__top-form {
+        width: 60%;
+        display: flex;
+    }
+
+    .header__manage-account {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding: 1rem 1.3rem;
+        background-color: #004e10;
+        color: white;
+        font-size:  2rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+
+    .logo__mobile {
+        display: block;
+    }
+
+    .header__top-form {
+        width: 80%;
+        display: flex;
+    }
+
+    .header__top-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+
+/* Nav */
 
 .nav {
     background-color: var(--color-secundario);
@@ -109,8 +193,220 @@ body {
 
 }
 
+@media (max-width: 1024px) {
+    .nav__container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+}
+
+/* Main */
+
+.main {
+    width: 90%;
+    margin: 6rem auto 10rem;
+}
+
+.main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+.main__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: #5ccb5f;
+    box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
+    -webkit-box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
+    -moz-box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
+}
+
+@media(max-width: 1200px) {
+    .main__container {
+        width: 95%;
+    }
+}
 
 
+.main__productos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    background-color: #5ccb5f;
+}
+
+.main__producto-detalles p {
+    font-size: 2rem;
+}
+
+.main__producto-detalles p span {
+    font-weight: 700
+}
+
+.main__producto-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 1.7rem;
+}
+
+.main__producto-cantidad button {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    background-color: #004e10;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.main__producto-cantidad button:hover {
+    background-color: #0d561b;
+}
+
+
+.main__producto {
+    display: flex;
+    align-items: center;
+}
+
+.main__producto-img {
+    width: 30%;
+    text-align: center;
+}
+.main__producto-img img {
+    max-width: 10rem;
+    
+}
+
+
+.main__detalles-container {
+    background-color: #b4ff9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.main__total-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__cupon-descuento {
+    text-decoration: underline;
+    color: black;
+}
+
+.main__total, .main__subtotal, .main__descuento{
+    font-size: 2rem;
+}
+
+.main__total-pago span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.metodo__pago-tarjeta {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.metodo__pago-transferencia {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.metodo__pago-efectivo {
+    font-size: 2rem;
+}
+
+.metodo__pago-efectivo input, .metodo__pago-tarjeta input, .metodo__pago-transferencia input {
+    margin-left: 1rem;
+}
+
+.main__metodo-pago input[type="submit"] {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem;
+    border-radius:1rem 0 1rem 0;
+    cursor: pointer;
+
+}
+
+.main__metodo-pago input[type="submit"]:hover {
+    background-color: #004e10;
+}
+
+.main__calcular-costo-envio {
+    background-color: rgb(155, 252, 11);
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+@media(max-width:1024px) {
+    .main__container {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+
+    }
+    .main__productos-container {
+        width: 100%;
+    }
+    .main__detalles-container {
+        width: 100%;
+        height: 60rem;
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width:800px) {
+    .main__container {
+        width: 80%;
+
+    }
+}
+
+@media(max-width:640px) {
+    .main__container {
+        width: 90%;
+
+    }
+
+    .main__producto {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid var(--color-secundario);
+        padding-bottom: 1rem;
+    }
+
+    .main__producto-cantidad {
+        justify-content: center;
+    }
+}
+
+/* Footer */
 
 .footer {
     background-color: var(--color-principal);
@@ -127,6 +423,7 @@ body {
 
 .footer__methods div img {
     width: 40rem;
+    margin-top: 0.7rem;
 }
 
 .footer__social-networks i{
@@ -138,118 +435,21 @@ body {
     margin-right: 1rem;
 }
 
-.contenedor {
-    max-width: 900px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-  
-.productos {
-    width: 50%;
+@media(max-width:1024px) {
+    .footer__container {
+        gap: 3rem;
+    }
 }
 
-.producto {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; 
-}
+@media(max-width:768px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
 
-.producto-imagen {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-
-
-.resumen {
-    width: 30%;
-    margin-top: 20px;
-    font-size: 20px;
-
-}
-  
-.medios-pago {
-    margin-top: 25px;
-}
-
-.medios-pago h2 {
-    font-size: 2rem; 
-    margin-bottom: 10px; 
-}
-
-.medios-pago ul {
-    list-style: none;
-    padding: 0;
-}
-
-.medios-pago li {
-    margin-bottom: 5px;
-}
-.medios-pago span {
-    margin-right: 5px; 
-}
-.medios-pago label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.medios-pago span {
-    margin-right: 10px;
-}
-
-.medios-pago i {
-    font-size: 1.5rem;  
-}
-
-.medios-pago input {
-    order: 3;  
-    margin-left: 85px;
-}
-
-
-
-.btn-mas,
-.btn-menos,
-.btn-borrar {
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-h4 {
-    margin-left: 120px; 
-    font-weight: bold; 
-    font-size: 25px; 
-    margin-bottom: 20px;
-}
-
-.enlace-envio {
-    text-decoration: underline; 
-    color: #000000; 
-    cursor: pointer; 
-    font-size: 20px; 
-    margin: 30px;
-
-}
-
-.boton-pagar {
-    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
-    padding: 15px 30px; /* Ajusta el relleno según tus preferencias */
-    background-color: rgb(2, 143, 32); /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Ajusta el radio de borde según tus preferencias para esquinas redondeadas */
-    cursor: pointer; /* Cambia el cursor al puntero al pasar sobre el botón */
-    margin-left: 40px;
-}
-
-.boton-pagar:hover {
-    background-color: #03a310; /* Color de fondo del botón al pasar sobre él */
+    .footer__contacto, .footer__social-networks {
+        border-bottom: 1px solid var(--color-secundario);
+        padding-bottom: 1rem;
+    }
 }
 
