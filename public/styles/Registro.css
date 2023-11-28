@@ -1,0 +1,61 @@
+/* Estilo del encabezado */
+header {
+    background-color: #5ccb5f;
+}
+
+.logo {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo según sea necesario */
+}
+
+.search-bar, .btn-login, .btn-register {
+    background-color: #5ccb5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilo de la sección de botones de opciones */
+.button-dividers {
+    background-color: #3a9b4e; /* Verde más oscuro */
+}
+
+.button-divider {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Estilo de la sección de registro */
+.registration-form {
+    border: 2px solid #004d2c; /* Verde oscuro */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.registration-form h2 {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+/* Estilo de los campos de registro */
+.registration-form label {
+    border-radius: 5px;
+}
+
+/* Espaciado entre "Registrarse" y los botones de opciones */
+.registration-form,
+.button-dividers {
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilo del pie de la página */
+.footer-image {
+    width: 100%;
+}
+
+.footer {
+    background-color: #5ccb5f;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
