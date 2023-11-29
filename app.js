@@ -14,6 +14,14 @@ app.get('/login', (req,res) => {
     res.sendFile(__dirname + '/views/login.html')
 })
 
+app.get('/registro', (req,res) => {
+    res.sendFile(__dirname + '/views/registro.html')
+})
+
+app.get('/detalle-producto', (req, res) => {
+    res.sendFile(__dirname + '/views/detalleProducto.html')
+})
+
 app.listen(3001, () => {
     console.log('Servidor iniciado correctamente')
 })

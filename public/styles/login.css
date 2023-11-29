@@ -176,7 +176,8 @@ body {
 .main {
     width: 90%;
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 15rem;
+    height: 50vh;
 }
 
 .form__container {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="/styles/detalleProducto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -26,9 +26,9 @@
                     <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
                 </form>
                 <div class="header__manage-account">
-                    <a href="#">Iniciar Sesión<i class="fas fa-sign-in-alt"></i></a>
-                    <a href="#">Registrarse<i class="far fa-id-card"></i></a>
-                    <a href="#" class="carrito-compras"><i class="fas fa-shopping-basket icono-carrito"></i></a>
+                    <a href="/login">Iniciar Sesión<i class="fas fa-sign-in-alt"></i></a>
+                    <a href="/registro">Registrarse<i class="far fa-id-card"></i></a>
+                    <a href="/carrito" class="carrito-compras"><i class="fas fa-shopping-basket icono-carrito"></i></a>
                 </div>
                 <div class="burger-menu">
                     <i class="fa fa-bars burger"></i>
@@ -44,54 +44,59 @@
                     <a href="" class="nav__item">Otros</a>
                 </div>
             </nav>
-            </section>
         </header>
-
-        <main>
-            <div class="detalleProducto">
-                <div class="product-images">
-                    <input type="radio" id="img1" name="slider" checked>
-                    <input type="radio" id="img2" name="slider">
-                    
-                  
-                    <div class="slides">
-                      <div class="slide">
-                        <img src="/public/images/camiseta-river.png" alt="Camiseta 1">
-                      </div>
-                      <div class="slide">
-                        <img src="/public/images/camiseta-river.png" alt="Camiseta 2">
-                      </div>
-                      
+        <main>  	
+            <section class="main__detalle-producto">
+                <div class="container main__detalle-producto-container">
+                    <div class="container-imagenes">
+                        <img src="/images/river-1.PNG" alt="Imagen camiseta river">
+                        <img src="/images/river-2.PNG" alt="Imagen camiseta river">
+                        <img src="/images/river-3.PNG" alt="Imagen camiseta river">
+                        <img src="/images/river-1.PNG" alt="Imagen camiseta river">
                     </div>
-                  
-                    <label for="img1" class="nav-btn">&#9679;</label>
-                    <label for="img2" class="nav-btn">&#9679;</label>
-                  </div>
-                  
-              <div class="productoInfo">
-                <h1>Nombre del Producto</h1>
-                <p>Precio: $XX</p>
-                <p>Cuotas: X cuotas de $X</p>
-                <label for="size">Seleccionar Talle:</label>
-                <select id="size">
-                  <option value="small">S</option>
-                  <option value="medium">M</option>
-                  <option value="large">L</option>
-                  <option value="extralarge">XL</option>
-                </select>
-                <button id="customize-button">Personalizar</button>
-              </div>
-            </div>
-          
-            <div class="productosRecientes">
-              <h2>Productos Vistos Recientemente</h2>
-              <div class="productosRecientes">
-                <img src="/public/images/camiseta-arsenal.png" alt="Camiseta Arsenal 22/23">
-                <p>Camiseta Arsenal 22/23</p>
-              </div>
-            </div>
-          </main>
-
+                    <div class="detalles-productos-info">
+                        <h2 class="detalle-nombre">Camiseta oficial River Plate temporada 2023-2024</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae magni sapiente molestiae, modi enim natus, optio labore non culpa debitis dignissimos sit eius. Repudiandae itaque reiciendis voluptatum animi ratione impedit!</p>
+                        <form action="">
+                            <div>
+                                <label for="talles">Seleccionar talle</label>
+                                <select name="talles" id="talles">
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                </select>
+                            </div>
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="main__otros-productos">
+                <h2>Tambien te puede interesar</h2>
+                <div class="container main__otros-productos-container">
+                    <div class="main__product">
+                        <img src="images/camiseta-river.png" alt="imagen camiseta">
+                        <h3>River Plate 2023/2024</h3>
+                        <p>$40.000</p>
+                        <a href="#">Ver producto</a>
+                    </div>
+                    <div class="main__product">
+                        <img src="images/camiseta-arsenal.png" alt="imagen camiseta">
+                        <h3>River Plate 2023/2024</h3>
+                        <p>$40.000</p>
+                        <a href="#">Ver producto</a>
+                    </div>
+                    <div class="main__product">
+                        <img src="images/camiseta-chelsea.png" alt="imagen camiseta">
+                        <h3>River Plate 2023/2024</h3>
+                        <p>$40.000</p>
+                        <a href="#">Ver producto</a>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="footer__container container">
                 <div class="footer__social-networks">
@@ -116,5 +121,4 @@
                 </div>
             </div>
         </footer>
-
     </body>

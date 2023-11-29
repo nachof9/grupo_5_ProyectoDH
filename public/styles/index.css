@@ -278,6 +278,7 @@ body {
 
 .main {
     margin-top: 10rem;
+    height: 50vh;
 }
 
 .main__heading {
