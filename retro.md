@@ -24,4 +24,4 @@
 
 ## Acciones para mejorar
 - Revisar la infraestructura técnica para evitar retrasos en el futuro.
-- Lograr una adaptacion mas rapida en cuanto a los lneguajes y codigos. 
+- Lograr una adaptacion mas rapida en cuanto a los lenguajes y codigos. 
