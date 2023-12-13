@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <title>Gol de Oro - Home</title>
-    </head>
+    <%- include('../partials/head.ejs', {titulo:'Gol de Oro - Home', estilos:'index.css'}) %>
     <body>
         <header class="header">
             <div class="logo__mobile">
@@ -107,30 +94,8 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
-            <div class="footer__container container">
-                <div class="footer__social-networks">
-                    <h3>NUESTRAS REDES SOCIALES</h3>
-                    <div>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                        <i class="fa-brands fa-square-x-twitter"></i>
-                    </div>
-                </div>
-                <div class="footer__contacto">
-                    <h3>CONTACTO</h3>
-                    <p><i class="fa-solid fa-envelope"></i>goldeoro@gmail.com</p>
-                    <p><i class="fa-brands fa-square-whatsapp"></i>9876543984</p>
-                    <p><i class="fa-solid fa-compass"></i>Alsina 531</p>
-                </div>
-                <div class="footer__methods">
-                    <div>
-                        <h3>MEDIOS DE PAGO</h3>
-                        <img src="images/mediospago.png" alt="imagen medios de pago">
-                    </div>
-                </div>
-            </div>
-        </footer>
+        
+        <%- include('../partials/footer.ejs') %>
 
     </body>
         

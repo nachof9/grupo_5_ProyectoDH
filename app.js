@@ -1,27 +1,28 @@
 const express = require('express')
 const app = express()
+app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req,res) => {
-    res.sendFile(__dirname + '/views/index.html')
-})
+    res.render( 'products/index.ejs');
+});
 
 app.get('/carrito', (req,res)=>{
-    res.sendFile(__dirname + '/views/carritodecompras.html');
+    res.render('products/carritodecompras.ejs');
 });
 
 app.get('/login', (req,res) => {
-    res.sendFile(__dirname + '/views/login.html')
-})
+    res.render('users/login.ejs');
+});
 
 app.get('/registro', (req,res) => {
-    res.sendFile(__dirname + '/views/registro.html')
-})
+    res.render('users/registro.ejs');
+});
 
 app.get('/detalle-producto', (req, res) => {
-    res.sendFile(__dirname + '/views/detalleProducto.html')
-})
+    res.render( 'products/detalleProducto.ejs');
+});
 
 app.listen(3001, () => {
-    console.log('Servidor iniciado correctamente')
-})
+    console.log('Servidor iniciado correctamente');
+});
