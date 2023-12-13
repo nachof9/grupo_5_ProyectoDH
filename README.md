@@ -35,3 +35,7 @@ Descripción de los integrantes del grupo:
 #Juan Jose Rodriguez: Tengo 20 años y soy un Técnico en Informática. Actualmente, estoy estudiando por mi cuenta y tomando un curso de Full Stack Developer en DigitalHouse. Me apasiona estar al tanto de las últimas tecnologias y me gusta ir al gimnasio como de pasar tiempo con amigos, especialmente jugando al fútbol.
 
 #Joaquin Ignacio Rodriguez: Mi primera especializacion en informatica fue el Excel financiero, razon por la cual empece a estudiar mas temas de informatica. Actualmente tengo 26 años.
+
+
+#Enlace para el tablero de trabajo: 
+https://trello.com/b/ZPKHsqyK/equipo-5-dh
