@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs', {titulo:'Gol de Oro - Administrar producto', estilos:'admProducto.css'}) %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main class="main">
+        <div class="form__container">
+            <div class="form__subtitle">
+                <h2>Crear / editar producto</h2>
+                <p>Asegurate de completar todos los campos</p>
+            </div>
+            <form action="">
+                <div class="inputs__name-container">
+                    <input type="text" placeholder="Nombre" class="input__nombre">
+                </div>
+                <textarea name="descripcion" id="descripcion" class="input__descripcion" placeholder="Descripción"></textarea>
+                <div class="input__imagen">
+                    <label for="imagen">Subir imagen</label>
+                    <input type="file" id="imagen"/>
+                </div>
+
+                <div class="input__categoria">
+                    <label for="categoria">Seleccionar Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="">Club Argentino</option>
+                        <option value="">Club Europeo</option>
+                        <option value="">Otro Club</option>
+                        <option value="">Seleccion Argentina</option>
+                        <option value="">Otras Selecciones</option>
+                    </select>
+                </div>
+
+                <div class="input__talle">
+                    <label for="talle">Seleccionar talle</label>
+                    <select name="talle" id="talle">
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                </div>
+                <div class="input__disponible">
+                    <label for="disponible">Unidades disponibles</label>
+                    <input type="number" id="disponible">
+                </div>
+
+                <input type="submit" value="Editar / Agregar Producto">
+            </form>
+
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

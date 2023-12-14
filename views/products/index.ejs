@@ -2,57 +2,28 @@
 <html lang="en">
     <%- include('../partials/head.ejs', {titulo:'Gol de Oro - Home', estilos:'index.css'}) %>
     <body>
-        <header class="header">
-            <div class="logo__mobile">
-                <a href="/" class="header__logo_link"><img src="images/logo-goldeoro.png" alt="imagen logo" class="header__logo-mobile"></a>
+        <%- include('../partials/header.ejs') %>
+        <div class="hero">
+        </div>
+        <section class="header__hero-benefits">
+            <div class="header__hero-benefits-container">
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>ENVIOS A TODO EL PAIS</h3>
+                    <p>COMPRÁ DESDE TU CASA</p>
+                </div>
+                <div class="header__hero-benefits-card">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>HASTA 6 CUOTAS</h3>
+                    <p>CON TODAS LAS TARJETAS</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>COMPRA SEGURA</h3>
+                    <p>PROTEJEMOS TUS DATOS</p>
+                </div>
             </div>
-            <div class="header__top-container container">
-                <a href="/" class="header__logo_link"><img src="images/logo-goldeoro.png" alt="imagen logo" class="header__logo"></a>
-                <form action="" class="header__top-form">
-                    <input type="text" class="search-bar" placeholder="Buscar productos, marcas y más">
-                    <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-                </form>
-                <div class="header__manage-account">
-                    <a href="/login">Iniciar Sesión<i class="fas fa-sign-in-alt"></i></a>
-                    <a href="/registro">Registrarse<i class="far fa-id-card"></i></a>
-                    <a href="/carrito" class="carrito-compras"><i class="fas fa-shopping-basket icono-carrito"></i></a>
-                </div>
-                <div class="burger-menu">
-                    <i class="fa fa-bars burger"></i>
-                </div>
-            </div>
-            <nav class="nav">
-                <div class="nav__container container">
-                    <a href="" class="nav__item">Inicio</a>
-                    <a href="" class="nav__item">Productos</a>
-                    <a href="" class="nav__item">Clubes Argentinos</a>
-                    <a href="" class="nav__item">Clubes Europeos</a>
-                    <a href="" class="nav__item">Selecciones Nacionales</a>
-                    <a href="" class="nav__item">Otros</a>
-                </div>
-            </nav>
-            <div class="hero">
-            </div>
-            <section class="header__hero-benefits">
-                <div class="header__hero-benefits-container">
-                    <div>
-                        <i class="fa-solid fa-truck"></i>
-                        <h3>ENVIOS A TODO EL PAIS</h3>
-                        <p>COMPRÁ DESDE TU CASA</p>
-                    </div>
-                    <div class="header__hero-benefits-card">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <h3>HASTA 6 CUOTAS</h3>
-                        <p>CON TODAS LAS TARJETAS</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h3>COMPRA SEGURA</h3>
-                        <p>PROTEJEMOS TUS DATOS</p>
-                    </div>
-                </div>
-            </section>
-        </header>
+        </section>
         <main class="main container">
             <h2 class="main__heading">NUEVOS LANZAMIENTOS</h2>
             <div class="main__products-container">

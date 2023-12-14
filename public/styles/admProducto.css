@@ -1,0 +1,406 @@
+/* Globales */
+
+:root {
+    --color-principal: #5ccb5f;
+    --color-secundario: #006414
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Top Header */
+.header {
+    background-color: var(--color-principal);
+}
+
+.header__top-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+
+.header__logo_link {
+    text-align: center
+    ;
+}
+
+.header__logo {
+    width: 30rem;
+    max-width: 30%;
+}
+
+.logo__mobile {
+    display: none;
+}
+
+.header__top-form {
+    width: 30%;
+    display: flex;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 1.5rem;
+    outline: none;
+    border: 1px solid var(--color-secundario);
+}
+
+.search-button {
+    padding: 1.5rem;
+    border-radius: 0;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.search-button i {
+    color: white;
+}
+
+.header__manage-account a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    margin-left: .8rem;
+}
+
+.header__manage-account a:hover {
+    background-color: #004d0f;
+}
+
+.header__manage-account i {
+    margin-left: 1rem;
+}
+
+.header__manage-account .carrito-compras i  {
+    margin-left: 0;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__hero-benefits-container div i {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        background-color: var(--color-principal);
+    }
+
+    .header__logo_link{
+        max-width: 25%;
+    }
+
+    .header__top-form {
+        width: 60%;
+        display: flex;
+    }
+
+    .header__manage-account {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding: 1rem 1.3rem;
+        background-color: #004e10;
+        color: white;
+        font-size:  2rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+
+    .logo__mobile {
+        display: block;
+    }
+
+    .header__top-form {
+        width: 80%;
+        display: flex;
+    }
+
+    .header__top-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+
+/* Nav */
+
+.nav {
+    background-color: var(--color-secundario);
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav__item {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav__item:hover {
+    border-bottom: 2px solid #fefefe;
+    color: #fefefe;
+
+}
+
+@media (max-width: 1024px) {
+    .nav__container {
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+}
+
+/* Main */
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+
+.form__container {
+    background-color: var(--color-principal);
+    width: 50%;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.form__subtitle h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form__subtitle p{
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input__nombre {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.input__descripcion {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.input__imagen {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.input__imagen label, .input__imagen input {
+    font-size: 1.7rem;
+}
+
+.input__categoria {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__categoria select {
+    padding: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.input__categoria label, .input__categoria option, .input__categoria select {
+    font-size: 1.7rem
+}
+
+.input__talle {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.input__talle select {
+    padding: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+.input__talle label, .input__talle option, .input__talle select {
+    font-size: 1.7rem
+}
+
+.input__disponible {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.input__disponible input{
+    padding: 1.3rem;
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+}
+
+
+form input[type="submit"] {
+    background-color: var(--color-secundario);
+    color: white;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    width: 80%;
+    display: block;
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+form input[type="submit"]:hover {
+    background-color: #02400e;
+}
+
+
+@media(max-width:1024px) {
+    .form__container {
+       width: 80%;
+    }
+}
+
+@media(max-width:768px) {
+    .form__container {
+        width: 90%;
+     }
+}
+
+@media(max-width:640px) {
+    .form__container {
+        width: 100%;
+     }
+}
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-principal);
+    padding: 2rem 0;
+    margin-top: 10rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__methods div img {
+    width: 40rem;
+    margin-top: 0.7rem;
+}
+
+
+.footer__social-networks i{
+    font-size: 3rem;
+    margin-top: 0.7rem;
+}
+
+.footer__contacto i{
+    margin-right: 1rem;
+}
+
+@media(max-width:1024px) {
+    .footer__container {
+        gap: 3rem;
+    }
+}
+
+@media(max-width:768px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer__contacto, .footer__social-networks {
+        border-bottom: 1px solid var(--color-secundario);
+        padding-bottom: 1rem;
+    }
+}
+
